@@ -1,0 +1,28 @@
+group 'com.cs_fact.app.spark'
+version '0.0.1'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'scala'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+ext {
+    scalaVersion = '2.10'
+    scalaVersionRevision = '4'
+    scalazVersion = '7.0.5'
+    specs2Version = '2.3.4'
+    sparkVersion = '1.2.0'
+}
+
+dependencies {
+    compile "org.scala-lang:scala-compiler:$scalaVersion.$scalaVersionRevision"
+    compile "org.scala-lang:scala-library:$scalaVersion.$scalaVersionRevision"
+    compile "org.scala-lang:scala-reflect:$scalaVersion.$scalaVersionRevision"
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile "org.apache.spark:spark-core_2.10:$sparkVersion"
+}
