@@ -19,6 +19,7 @@ object SparkSmplScalaInit {
   }
 }
 
+
 class SparkSmplScalaInit{
 
 }
