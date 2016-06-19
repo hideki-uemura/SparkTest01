@@ -20,6 +20,8 @@ object SparkSmplScalaInit {
 }
 
 
+
+
 class SparkSmplScalaInit{
 
 }

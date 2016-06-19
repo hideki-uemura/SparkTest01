@@ -15,7 +15,7 @@ ext {
     scalaVersionRevision = '4'
     scalazVersion = '7.0.5'
     specs2Version = '2.3.4'
-    sparkVersion = '1.2.0'
+    sparkVersion = '1.3.0'
 }
 
 dependencies {
