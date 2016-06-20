@@ -14,7 +14,6 @@ class ScalaFilter01 {
     val rdd1 = sc parallelize(Array(1,2,3,4,5))
     val outLineRdd = rdd1 filter(v =>  v % 2 == 0)
     outLineRdd collect() foreach (line => logger info(line toString))
-    outLineRdd saveAsTextFile "a"
   }
 }
 
