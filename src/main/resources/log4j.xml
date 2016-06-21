@@ -8,11 +8,20 @@
             <param name="ConversionPattern" value="%m%n" />
         </layout>
     </appender>
+    <appender name="stdout2" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="メッセージ =>   %m%n" />
+        </layout>
+    </appender>
 
-
-
-    <root>
+    <logger name="com">
         <level value="INFO" />
-        <appender-ref ref="stdout"/>
-    </root>
+        <appender-ref ref="stdout2"/>
+    </logger>
+
+    <!--<root>-->
+        <!--<level value="ERROR" />-->
+        <!--<appender-ref ref="stdout"/>-->
+    <!--</root>-->
 </log4j:configuration>
